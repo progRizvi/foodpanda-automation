@@ -1,0 +1,6 @@
+{
+	"baseUrl": "https://www.foodpanda.com.bd",
+	"chromeWebSecurity": false,
+	"watchForFileChanges": false,
+	"defaultCommandTimeout": 10000
+}

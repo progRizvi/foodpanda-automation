@@ -1,0 +1,19 @@
+{
+	"name": "foodpanda",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"cy": "cypress open"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"cypress-localstorage-commands": "^1.7.0"
+	},
+	"dependencies": {
+		"cypress-file-upload": "^5.0.8"
+	}
+}
