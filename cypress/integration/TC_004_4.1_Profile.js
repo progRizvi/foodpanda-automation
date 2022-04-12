@@ -1,5 +1,8 @@
 /// <reference types="Cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+
+login();
 describe("Open Profile", () => {
 	it("Open Profile", () => {
 		cy.get('[data-testid="account-link-authenticated"]').click();

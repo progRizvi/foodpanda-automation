@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import "cypress-file-upload";
 import login from "./TC_002_2.3_Login_pass";
-
+login();
 describe("Account security and protection", () => {
 	it("Secure your account", () => {
 		cy.get('[data-testid="account-link-authenticated"]').click();
@@ -36,13 +36,13 @@ describe("Account security and protection", () => {
 				.then((el) => {
 					const blob = Cypress.Blob.base64StringToBlob(this.logo, "image/jpeg");
 					const file = new File([blob], "logo.jpg", {
-						type: "image/jpeg",
+						type: "image/jpeg"
 					});
 					const data = new DataTransfer();
 					data.items.add(file);
 					el[0].files = data.files;
 					const changeEvent = new Event("change", {
-						bubbles: true,
+						bubbles: true
 					});
 					el[0].dispatchEvent(changeEvent);
 				});

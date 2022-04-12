@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+
+login();
 describe("Badges", () => {
 	it("Badges", () => {
 		cy.get("#dLabel").click();

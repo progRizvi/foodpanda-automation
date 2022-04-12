@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+login();
 describe("Unsubscribe to newsletter", () => {
 	it("Unsubscribe to newsletter", () => {
 		cy.get('[data-testid="account-link-authenticated"]').click();

@@ -1,5 +1,8 @@
 /// <reference types="Cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+
+login();
 describe("Refund Account page", () => {
 	it("Refund Account page", () => {
 		cy.get("#dLabel").click();

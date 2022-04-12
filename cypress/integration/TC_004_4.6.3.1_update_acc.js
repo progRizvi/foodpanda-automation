@@ -1,7 +1,10 @@
 /// <reference types="cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+
 // login();
 
+login();
 describe("Update account info", () => {
 	it("Update account info", () => {
 		cy.get('[data-testid="account-link-authenticated"]').click();

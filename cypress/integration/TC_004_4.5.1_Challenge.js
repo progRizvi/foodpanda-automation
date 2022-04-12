@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+import login from "./TC_002_2.3_Login_pass";
+login();
 describe("Challenge Page", () => {
 	it("Challenge Page", () => {
 		cy.get("#dLabel").click();
